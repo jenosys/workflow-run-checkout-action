@@ -1,5 +1,5 @@
-name: 'Workflow run check action'
-description: 'Check previous runs of a workflow'
+name: 'Workflow run checkout action'
+description: 'Check out previous runs of a workflow'
 runs:
   using: 'docker'
   image: 'Dockerfile'
