@@ -1,0 +1,11 @@
+name: 'Workflow run check action'
+description: 'Check previous runs of a workflow'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+outputs:
+  run_count: # number of same workflow 
+    description: 'The count of previous runs (in progress or queued)'
+branding:
+  icon: 'activity'  
+  color: 'blue'
