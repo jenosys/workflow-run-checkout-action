@@ -1,6 +1,6 @@
-# Workflow run cleanup action
+# Workflow run checkout action
 
-This action cleans up previously running instances of a workflow
+This action checks out previously running instances of a workflow
 on the same branch. This accomplishes the task of automatically
 cancelling CI runs on pushes to the same branch, which is a common
 feature in most CI systems but currently not possible with
@@ -41,3 +41,6 @@ on:
     ...
     other-jobs:
 ```
+
+
+This action was forked from rokroskar/workflow-run-cleanup-action.
