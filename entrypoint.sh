@@ -43,7 +43,8 @@ echo "workflow id: "$workflow_id
 
 # get the run ids
 run_ids=$(curl -s ${GITHUB_API}/repos/${GITHUB_REPOSITORY}/actions/workflows/${workflow_id}/runs -H "${auth_header}" | jq -r "${jq_run_ids}" | sort -n | head -n-1)
-run_count=${#run_ids[@]}
+array=($run_ids)
+run_count=${#array[@]}
 echo "run ids: "$run_ids
 echo "run count: "$run_count
 
